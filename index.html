@@ -1,1 +1,80 @@
-Hello World - 2nd attempt
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="main.css">
+    <style>
+
+        .content {
+            position: fixed;
+            font-family: sans-serif;
+            top: 0;
+            left: 0;
+            padding: 10px 0 0 20px;
+            margin: 0 0 0 0;
+            color: #f1f1f1;
+            width: 100%;
+        }
+
+        .content #title {
+            padding: 0;
+            margin: 0;
+            font-family: 'LogoFonts', Arial, sans-serif;
+            font-size: 3em;
+            letter-spacing: 0.3em;
+            /*color: #023e8a;*/
+        }
+
+        .content #description {
+            padding: 10px;
+            margin: 0;
+            font-size: 0.5em;
+            max-width: 500px;
+            /*border: 1px solid red;*/
+            background: #00a3cb;
+            letter-spacing: 0.1em;
+        }
+
+        .content #note {
+            padding: 20px 10px 10px 10px;
+            margin: 0;
+            font-size: 0.3em;
+            max-width: 500px;
+            /*border: 1px solid red;*/
+            /*background: #00a3cb;*/
+            letter-spacing: 0.1em;
+        }
+
+        @font-face {
+            font-family: 'LogoFonts';
+            src: url(archivoblack-regular-webfont.woff) format("woff");
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+    </style>
+
+    <title></title>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+    <source src="windfarm.m4v" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+    <p id="title">DSIO</p>
+    <p id="description">A Staking Pool on the Cardano Blockchain that Runs on Renewable Energy in the Netherlands *</p>
+    <p id="note">* Energy to the datacenter is provided from a wind farms in Delfzijl and Zeeland (Krammer and Bouwdokken) and a solar energy park in Delfzijl Sunport - The closest city is Groningen in the northern Netherlands</p>
+</div>
+
+</body>
+</html>
